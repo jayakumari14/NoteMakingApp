@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full min-h-screen bg-slate-900 text-white p-10">
+      <a href="/" class="text-sky-500 inline-block mb-10 border p-2 rounded-md"
+        >Go back to Home</a
+      >
+      <form action="/edit" method="post">
+        <input
+          class="block px-5 py-2 bg-slate-800 w-1/4 rounded-md outline-none text-slate-600"
+          type="text"
+          name="previous"
+          placeholder="Previous file name."
+          value="<%=filename%>"
+        />
+        <input
+          class="block px-5 py-2 bg-slate-800 w-1/4 rounded-md outline-none mt-2"
+          type="text"
+          name="new"
+          placeholder="New file name."
+        />
+
+        <input
+          class="mt-2 bg-amber-400 px-5 py-2 rounded-md"
+          type="submit"
+          value="Update File"
+        />
+      </form>
+    </div>
+  </body>
+</html>
